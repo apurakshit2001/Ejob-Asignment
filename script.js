@@ -2,6 +2,18 @@ const reloadPage = () => {
     window.location.reload();
 };
 
+document.addEventListener('DOMContentLoaded', function () {
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        navToggle.classList.toggle('open');
+    });
+});
+
+
+
 
 // Vowel or Consonant Checker 
 const checkVowelConsonant = () => {

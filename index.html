@@ -10,8 +10,30 @@
 </head>
 
 <body>
+    <nav>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#vowelConsonant">Vowel or Consonant Checker</a></li>
+            <li><a href="#divisibility">Divisibility of 5 & 11 Checker</a></li>
+            <li><a href="#multiple">Multiple of 3 or 7 Checker</a></li>
+            <li><a href="#range">Range Checker</a></li>
+            <li><a href="#grade">Grade Checker</a></li>
+            <li><a href="#printNumbers">Print Numbers from 1 to 10</a></li>
+            <li><a href="#printEvenNumbers">Print Even Numbers from 1 to 20</a></li>
+            <li><a href="#multiplicationTable">Multiplication Table</a></li>
+            <li><a href="#sum">Sum of Numbers from 1 to 100</a></li>
+            <li><a href="#fibonacci">First 10 Fibonacci Numbers</a></li>
+            <li><a href="#leapYear">Leap Year Checker</a></li>
+            <li><a href="#largestNumber">Largest of Three Numbers</a></li>
+        </ul>
+    </nav>
+
     <div class="grid-container">
-        <div class="container">
+        <div class="container" id="vowelConsonant">
             <h2>Vowel or Consonant Checker</h2>
             <input type="text" id="vowelConsonantInput" placeholder="Write here..">
             <button type="button" onclick="checkVowelConsonant()">Check</button>
@@ -19,7 +41,7 @@
                 <h1 id="VCresult" class="result">Click to see the results..</h1>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="divisibility">
             <h2>Divisibility of 5 & 11 Checker</h2>
             <input type="number" id="divisibilityInput" placeholder="Enter a number..">
             <button type="button" onclick="checkDivisibility()">Check</button>
@@ -27,7 +49,7 @@
                 <h1 id="DivisibilityResult" class="result">Click to see the results..</h1>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="multiple">
             <h2>Multiple of 3 or 7 Checker</h2>
             <input type="number" id="multipleInput" placeholder="Enter a number..">
             <button type="button" onclick="isMultipleOf3Or7()">Check</button>
@@ -35,7 +57,7 @@
                 <h1 id="isMultipleOf3Or7Result" class="result">Click to see the results..</h1>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="range">
             <h2>Range Checker</h2>
             <input type="number" id="rangeInput" placeholder="Enter a number..">
             <button type="button" onclick="checkRange()">Check</button>
@@ -43,7 +65,7 @@
                 <h1 id="rangeResult" class="result">Click to see the results..</h1>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="grade">
             <h2>Grade Checker</h2>
             <input type="number" id="gradeInput" placeholder="Enter marks..">
             <button type="button" onclick="checkGrade()">Check</button>
@@ -51,21 +73,21 @@
                 <h1 id="gradeResult" class="result">Click to see the results..</h1>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="printNumbers">
             <h2>Print Numbers from 1 to 10</h2>
             <button type="button" onclick="printNumbers()">Print</button>
             <div class="resultContainer">
                 <h1 id="numbersResult" class="result">Click the 'Print' button to see the numbers..</h1>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="printEvenNumbers">
             <h2>Print Even Numbers from 1 to 20</h2>
             <button type="button" onclick="printEvenNumbers()">Print</button>
             <div class="resultContainer">
                 <h1 id="evenNumbersResult" class="result">Click the 'Print' button to see the even numbers..</h1>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="multiplicationTable">
             <h2>Multiplication Table</h2>
             <label for="numberInput">Enter a number:</label>
             <input type="number" id="numberInput" placeholder="Enter a number..">
@@ -75,7 +97,7 @@
                     multiplication table..</h1>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="sum">
             <h2>Sum of Numbers from 1 to 100</h2>
             <button type="button" onclick="calculateSum()">Calculate Sum</button>
             <div class="resultContainer">
@@ -83,7 +105,7 @@
                     100..</h1>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="fibonacci">
             <h2>First 10 Fibonacci Numbers</h2>
             <button type="button" onclick="printFibonacci()">Print Fibonacci Numbers</button>
             <div class="resultContainer">
@@ -91,7 +113,7 @@
                     Fibonacci numbers..</h1>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="leapYear">
             <h2>Leap Year Checker</h2>
             <label for="yearInput">Enter a year:</label>
             <input type="number" id="yearInput" placeholder="Enter a year..">
@@ -101,7 +123,7 @@
                     year or not..</h1>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="largestNumber">
             <h2>Largest of Three Numbers</h2>
             <label for="num1">Enter the first number:</label>
             <input type="number" id="num1" placeholder="Enter first number..">
@@ -118,16 +140,11 @@
                     the largest among them..</h1>
             </div>
         </div>
-
-
-
-
     </div>
 
     <div class="reloaddiv">
         <button type="button" onclick="reloadPage()" class="reload">🔄</button>
     </div>
-
 </body>
 
 </html>
