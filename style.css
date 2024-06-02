@@ -219,7 +219,7 @@ input[type="number"] {
         width: fit-content;
         transition: 0.3s ease-in-out;
         margin: auto;
-        margin-top: 1000px !important;
+        /* margin-top: 1000px !important; */
     }
 
     .nav-toggle.open span:nth-child(1) {
