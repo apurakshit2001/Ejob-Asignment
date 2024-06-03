@@ -1,3 +1,5 @@
+alert("I have made this page responsive and added a navbar feature. I would appreciate it if you could check it out.");
+
 const reloadPage = () => {
     window.location.reload();
 };
